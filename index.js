@@ -10,9 +10,9 @@ function createEmployeeRecord ([fName, famName, employeeTitle, payRatePerHour]){
     return newEmployeeRecord;
 }
 
-function createEmployeeRecords(ArrayOfUserArrays){
+function createEmployeeRecords(arrayOfUserArrays){
     let usersRecords = [];
-    ArrayOfUserArrays.map(userArray => {
+    arrayOfUserArrays.map(userArray => {
        usersRecords.push(createEmployeeRecord(userArray))
     })
     return usersRecords
